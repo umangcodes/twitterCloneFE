@@ -9,5 +9,5 @@
     @apply flex flex-col justify-center items-center py-4
 }
 .loginButton{
-    @apply px-5 py-2 border rounded-full shadow-md
+    @apply flex px-5 py-2 border-twitterBlue rounded-full shadow-md justify-center items-center gap-4
 }
