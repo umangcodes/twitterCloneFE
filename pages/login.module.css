@@ -1,0 +1,13 @@
+.loginPage{
+    @apply flex flex-col justify-center items-center h-screen
+}
+
+.loginMenu{
+    @apply flex flex-col border rounded-xl justify-center items-center pb-5 px-5 shadow-sm
+}
+.loginTitle{
+    @apply flex flex-col justify-center items-center py-4
+}
+.loginButton{
+    @apply px-5 py-2 border rounded-full shadow-md
+}
