@@ -1,11 +1,20 @@
 import styles from "../pages/login.module.css"
 import {getProviders, signIn, useSession} from "next-auth/react"
+import {useRouter} from "next/router"
 import { useEffect } from "react"
 
 export default function Login({providers}) {
     const {data, status} = useSession()
+    const router = useRouter()
+    if(status === "loading"){
+        // set loading is true
+    }
+    if(data?.user){
+        // redirect to home page
+        router.push("/")
+    }
     useEffect(()=>{
-        console.log(data)
+        console.log(data, status)
     })
   return (
     <div className={styles.loginPage}>
