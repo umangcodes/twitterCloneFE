@@ -1,0 +1,27 @@
+
+  
+  .form{
+    @apply mx-5
+  }
+  
+  .formContainer{
+    @apply flex
+  }
+  
+  .avatar{
+    @apply rounded-full overflow-hidden w-12
+  }
+  
+  .textareaContainer{
+    @apply grow pl-4
+  }
+  
+  .textarea{
+    @apply w-full outline-none rounded-xl p-2 bg-transparent text-twitterDarkGray border
+  }
+  .buttonContainer{
+    @apply text-right border-t border-twitterBorder py-2
+  }
+  .button{
+    @apply bg-twitterBlue text-white px-4 py-2 shadow-md rounded-xl hover:shadow-xl
+  }
