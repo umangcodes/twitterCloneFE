@@ -9,7 +9,7 @@ export const authOptions = {
         GoogleProvider({
             clientId: process.env.GOOGLE_CLIENT_ID,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET
-        })
+        }),
         ],
     pages:{
         signIn: "/login",
@@ -21,7 +21,7 @@ export const authOptions = {
                 session.user.id = token.sub
                 // console.log("current token: " + token)
             }
-            console.log("no token found: " + token)
+            // console.log("no token found: " + token)
             return session
         }
     }
