@@ -17,11 +17,12 @@ export const authOptions = {
     callbacks:{
         // cannot log token or session
         session: async ({token, session}) => {
+            console.log("call back not working")
             if(session?.user && token?.sub){
                 session.user.id = token.sub
-                // console.log("current token: " + token)
+                console.log("current token: " + token)
             }
-            // console.log("no token found: " + token)
+            console.log("no token found: " + token)
             return session
         }
     }
