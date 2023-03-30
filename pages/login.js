@@ -1,8 +1,12 @@
 import styles from "../pages/login.module.css"
-import {getProviders, signIn} from "next-auth/react"
+import {getProviders, signIn, useSession} from "next-auth/react"
+import { useEffect } from "react"
 
 export default function Login({providers}) {
-    console.log(providers)
+    const {data, status} = useSession()
+    useEffect(()=>{
+        console.log(data)
+    })
   return (
     <div className={styles.loginPage}>
         <div className={styles.loginMenu}>
